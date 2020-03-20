@@ -266,7 +266,7 @@ namespace microIoT {
             buf[0] = 0x15;
         }
         buf[1] = angle;
-        pins.i2cWriteBuffer(0x16, buf);
+        pins.i2cWriteBuffer(0x10, buf);
     }
 
     //% weight=49
@@ -294,13 +294,13 @@ namespace microIoT {
                 buf[1] = 0x00;
             }
             buf[2] = speed;
-            pins.i2cWriteBuffer(IIC_ADDRESS, buf);
+            pins.i2cWriteBuffer(0x10, buf);
             buf[0] = 0x02;
             buf[1] = direction;
         } else {
         }
         buf[2] = speed;
-        pins.i2cWriteBuffer(IIC_ADDRESS, buf);
+        pins.i2cWriteBuffer(0x10, buf);
     }
     //% weight=48
     //% blockId=microIoT_motorStop block="Motor stop|%motors"
@@ -315,12 +315,12 @@ namespace microIoT {
             buf[0] = 0x00;
             buf[1] = 0;
             buf[2] = 0;
-            pins.i2cWriteBuffer(IIC_ADDRESS, buf);
+            pins.i2cWriteBuffer(0x10, buf);
             buf[0] = 0x02;
         }
         buf[1] = 0;
         buf[2] = 0;
-        pins.i2cWriteBuffer(IIC_ADDRESS, buf);
+        pins.i2cWriteBuffer(0x10, buf);
     }
 
     /*

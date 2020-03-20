@@ -17,6 +17,8 @@
     ],
     "testFiles": [],
     "public": true,
-    "installedVersion": "workspace:2db0bc0f-9db5-410b-f4cf-1c3c3b2d234f",
+    "supportedTargets": [
+        "microbit"
+    ],
     "preferredEditor": "tsprj"
 }
